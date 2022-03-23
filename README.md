@@ -1,4 +1,6 @@
 # Codewards Workings
-My attempts at Codewards challenges. 
+My attempts at Codewars challenges. 
+
+https://www.codewars.com/
 
 Starting with Javascript on 8kyu kata
