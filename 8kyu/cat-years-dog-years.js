@@ -100,9 +100,29 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   
     return [humanYears,catYears,dogYears];
   }
-  
-  
-
 // test 1 works, but test 2 and 3 fail
   
   
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  // Your code here!
+  let catYears = 0;
+  let dogYears = 0;
+
+  for (let i = 1; i <= humanYears; i++) {
+    if (i < 2){
+      catYears = 15
+      dogYears = 15
+    } else if (i === 2) {
+      catYears += 9
+      dogYears += 9
+    } else if (i >= 3) {
+      catYears += 4
+      dogYears += 5
+    }
+    console.log(humanYears, catYears, dogYears)
+  };
+
+  return [humanYears,catYears,dogYears];
+}
+// passed. But i don't understand why using the input variable doesnt' work. 
