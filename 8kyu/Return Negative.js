@@ -15,3 +15,27 @@
 function makeNegative(num) {
     // Code?
   }
+
+
+// this fails for negative numbers. 
+function makeNegative(num) {
+  // Code?
+  return num * -1
+}
+
+
+// this works
+function makeNegative(num) {
+  // Code?
+ if (num > 0) {return num * -1} else return num
+}
+
+// can i use a ternary? Yes i can
+function makeNegative(num) {
+  // Code?
+  return num > 0 ? num * -1 : num;
+}
+
+// what does this look like as an arrow function??
+// figured it out eventually
+let makeNegative = num => return num > 0 ? num * -1 : num;
