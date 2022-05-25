@@ -18,4 +18,31 @@ var number = function(busStops){
   // Good Luck!
 }
 
+//  Test cases
+//     assert.strictEqual(number([[10,0],[3,5],[5,8]]),5);
+//     assert.strictEqual(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]),17);
+//     assert.strictEqual(number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]),21);
+//     assert.strictEqual(number([[0,0]]),0);
 
+
+
+// Elements of each pair represent number of people get into bus (The first item) and number of people get off the bus (The second item) in a bus stop.
+
+// Loop through the array and: 
+// add arr[0]
+// subtract arr[1]
+// return new array 
+
+
+var number = function(busStops){
+  let peopleOnBus = 0
+  // Loop through the array and: 
+  for (let i = 0; i < busStops.length; i++ ) {  
+    // add arr[0]  ... but make sure its the index not the 0
+    peopleOnBus += busStops[i][0]; 
+    // subtract arr[1] ... ditto make sure its the array[index][second number]
+    peopleOnBus -= busStops[i][1];
+    // return new array 
+  }
+  return peopleOnBus
+}
