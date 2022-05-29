@@ -35,11 +35,25 @@ function SeriesSum(n)
         if (i == 1) {
             sum = 1
         } else 
-        sum += 1 / (i*3) // i don't know fraction math well enough. Should i convert this to a decimal first? I should have paid more attention in highschool
+        sum += 1 / (i*3) 
     }
     return (1 + sum).toPrecision(3).toString()
 }
 // this does not work. I don't clearly don't know math. 
+// i don't know fraction math well enough. Should i convert this to a decimal first? I should have paid more attention in highschool
+function SeriesSum(n)
+{
+    console.log(n);
+    let sum = 0;
+    for (let i = 1; i <= n ; i++){
+        if (i == 1) {
+            sum = 1
+        } else 
+        sum += 1/(1+(i*3))
+    }
+    return sum.toPrecision(3)
+}
+
 
 
 // Top unlocked solution: 
