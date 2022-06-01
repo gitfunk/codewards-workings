@@ -28,13 +28,13 @@ function getCount(str) {
 }
 
 // Doesn't work for strings with no vowels. 
-Vowels Count Tests
-should return 5 for 'abracadabra'
-should return 4 for 'pear tree'
-should return 13 for 'o a kak ushakov lil vo kashu kakao'
-should return 0 for 'my pyx'
-should return 168 for a long input
-should return correct results for random tests
+// Vowels Count Tests
+// should return 5 for 'abracadabra'
+// should return 4 for 'pear tree'
+// should return 13 for 'o a kak ushakov lil vo kashu kakao'
+// should return 0 for 'my pyx'
+// should return 168 for a long input
+// should return correct results for random tests
 
 
 
@@ -45,4 +45,3 @@ Balkoth, dsumner25, idieeasy, vingojw, dhensche, Azuaron, Raman_Kozar, Raman_Ner
 function getCount(str) {
   return (str.match(/[aeiou]/ig)||[]).length;
 }
-
