@@ -45,3 +45,4 @@ Balkoth, dsumner25, idieeasy, vingojw, dhensche, Azuaron, Raman_Kozar, Raman_Ner
 function getCount(str) {
   return (str.match(/[aeiou]/ig)||[]).length;
 }
+
