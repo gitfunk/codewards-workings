@@ -25,7 +25,14 @@ Test.assertSimilar(number(["a", "b", "c"]), ["1: a", "2: b", "3: c"], 'Return th
 
 // My attempts
 var number=function(array){
-  for(i = 0; i < array.lenth; i++){
-    
+  for(let i = 0; i < array.lenth; i++){
+    return (i+1) + ": " + array[i]
   }
+}
+// Derp. Totally missed it needs to be returned as an array. 
+
+// The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+var number=function(array){
+  const newArray = array.map((curVal, index, array) => (index + 1) + ": " + curVal)
+  return newArray
 }
