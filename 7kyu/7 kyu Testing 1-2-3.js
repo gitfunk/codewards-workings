@@ -36,3 +36,18 @@ var number=function(array){
   const newArray = array.map((curVal, index, array) => (index + 1) + ": " + curVal)
   return newArray
 }
+
+
+// Top solutions
+
+// I'm annoyingly close to the #1 solution. 
+
+var number = function(array) {
+  return array.map(function (line, index) {
+    return (index + 1) + ": " + line;
+  });
+}
+
+// The #2 spot uses arrow functions and template literals. This is just showin goff. 
+
+let number = (a) => a.map((v, i) => `${i + 1}: ${v}`)
