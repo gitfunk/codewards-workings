@@ -26,15 +26,17 @@ function gimme (triplet) {
 
 // Doesn't work. It returns '1' every time. 
 function gimme (triplet) {
+  console.log(triplet)
   const sorted = triplet.sort((a,b) => a-b);
   console.log(sorted)
   return triplet.indexOf(sorted[1]);
 }
 
-// Adding square brackets and ... around the array.sort works. 
+// Adding square brackets and ... around the array.sort works. I have no idea why. 
+// Update: .sort() is an in place sort. Meaning my code was sorting the original 'triplet' array as well as creating the 'sorted' pointer to said array. 
+// I would have seen this by console.log the original triplet AFTER the sort line. 
 function gimme (triplet) {
   const sorted = [...triplet].sort((a,b) => a-b);
-  console.log(sorted)
   return triplet.indexOf(sorted[1]);
 }
 
