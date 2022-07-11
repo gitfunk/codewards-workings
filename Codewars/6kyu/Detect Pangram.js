@@ -62,6 +62,22 @@ function isPangram(string){
 }
 // gross
 
+// My first answer just needed to move the 'else return true' out of the loop and drop the ELSE. 
+
+function isPangram(string){
+  const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+  for (let i = 0; i < 26; i++) 
+  {
+    if (!string.toLowerCase().includes(alphabet[i]))
+    {      
+      return false
+    } 
+  } 
+  return true
+}
+
+
 
 // # Solutions
 function isPangram(string){
