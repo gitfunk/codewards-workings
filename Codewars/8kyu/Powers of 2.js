@@ -24,3 +24,4 @@ function powersOfTwo(n){
 
 const result = powersOfTwo(2)
 console.log(result)
+
