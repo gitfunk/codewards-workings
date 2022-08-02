@@ -43,6 +43,20 @@ function sumArray(array) {
     return reducedArray
   }
 }
+// that worked a treat but is quite a lot of lines. 
+
+
+function sumArray(array) {
+  if (array == null || array.length < 3) {
+    return 0
+  } else {
+    return array.sort((a, b) => a - b).slice(1, - 1).reduce(
+      (p, c) => p + c)
+  }
+}
+// more succinct but i'm sure this can be written as a ternary
+
+
 
 sumArray([0, 1, 6, 10, 10])
 sumArray([-6, -20, -1, -10, -12])
