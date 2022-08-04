@@ -19,3 +19,20 @@
 // So there are 11 digits 1 for the squares of numbers between 0 and 25.
 // Note that 121 has twice the digit 1.
 
+// function nbDig(n, d) {
+//   // your code
+// }
+
+
+// # Working
+// In plain english we want to find the number of times the character d occurs in the squares of numbers between 0 and n. 
+
+// create an array of numbers between 0 and n
+// sqrt each number in the array
+// 
+
+function nbDig(n, d) {
+  const nArray = [];
+  while (nArray.length < n){nArray.unshift(n-1)}
+  return nArray
+}
