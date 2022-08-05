@@ -29,10 +29,42 @@
 
 // create an array of numbers between 0 and n
 // sqrt each number in the array
-// 
+
+// square the i
+// split the i into a new array of characters
+// loop through new array to check if character matches d
+// increase the count
 
 function nbDig(n, d) {
   const nArray = [];
-  while (nArray.length < n){nArray.unshift(n-1)}
-  return nArray
+  let newN = n
+  let dCount = 0
+  while (nArray.length <= n)
+  {
+    nArray.unshift(newN**2)
+    newN -= 1
+  }
+  console.log(nArray)
+  for (let i = 0; i <= nArray.length; i++) {
+    if (nArray[i] == d) {
+      dCount++;
+  }
+  
+  }
 }
+nbDig( 50, 2)
+// squaring the initial array values is the easy part. But i'm struggling to figure out the nested loop to then loop through each value to find characters. 
+
+
+function nbDig(n, d) {
+  const newArray = []
+
+  for (let i = 0; i <= n.length; i++) {
+    newArray.unshift(n**2).toString();
+    
+  }
+  return newArray.split(d)
+  console.log(newArray)
+}
+nbDig( 50, 2)
+
