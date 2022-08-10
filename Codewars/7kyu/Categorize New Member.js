@@ -38,14 +38,3 @@ function openOrSenior(data) {
   })
   return newData
 }
-
-// using Map https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-
-function openOrSenior(data) {
-  data.forEach(element => {
-    if (element[0] >= 55 && element[1] > 7) { newData.push('Senior') }
-    else {newData.push('Open')}
-  })
-  data.Map()
-  return newData
-}
