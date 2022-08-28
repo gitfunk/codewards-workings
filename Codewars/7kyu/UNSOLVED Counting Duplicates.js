@@ -49,4 +49,19 @@ function duplicateCount(text){
 // Not working. Works when there are only two instances but just keeps adding for all subsequent matches. 
 // ```
 
+function duplicateCount(text){
+  let duplicates = 0;
+  let newArray = text.toLowerCase().split('');
+  console.log(newArray);
 
+ for (let i = 0; i < newArray.length; i++){
+    console.log(newArray[i]);
+    if (newArray.indexOf(...newArray[i]) !== newArray.lastIndexOf(newArray[i]) ) {
+      duplicates++;
+      console.log(duplicates)
+    }
+ };
+ return duplicates;
+  
+}
+// also doesn't work.  
