@@ -47,3 +47,22 @@ function accum(s) {
 
 // Results in an ASCII Christmas Tree. Clearly pushing each index iteration is creating too many arrays. 
 
+// Can't i concatenate text strings with + ?
+function accum(s) {
+
+  const array = [];
+
+  for (let i = 0; i < s.length; i++) {
+    console.log(s[i]);
+    let str = s[i].toUpperCase();
+    
+    for (let c = 0; c < i; c++) {
+      str = str + s[i].toLowerCase()
+    };
+    console.log(str);
+    array.push(str)
+    
+  };
+  console.log(array)
+  return array.join("-");
+}
