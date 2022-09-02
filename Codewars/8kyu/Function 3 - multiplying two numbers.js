@@ -1,7 +1,7 @@
 // # 8 kyu Function 3 - multiplying two numbers
 // https://www.codewars.com/kata/523b66342d0c301ae400003b/train/javascript
 
-// # INSTRUCTIONS
+// DESCRIPTION
 // Implement a function called multiply, which takes two numbers and returns their product:
 
 // multiply(2, 3) = 6
@@ -12,3 +12,4 @@
 
 // # Working
 let multiply = (a, b) => a * b
+
