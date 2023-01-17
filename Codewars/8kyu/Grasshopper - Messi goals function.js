@@ -28,5 +28,9 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 // My Working
 
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  // code goes here
+   return (laLigaGoals + copaDelReyGoals + championsLeagueGoals)
+}
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return (laLigaGoals + copaDelReyGoals + championsLeagueGoals)
 }
