@@ -34,8 +34,17 @@ function aliasGen(){
 // Determine first character of passed strings, 
 // then return the variables firstName and surname as a string. 
 
-function aliasGen(){
+function aliasGen(a, b){
   // Code Here
-  charAt(0)
+  function isAlpha(str) {
+    return /^[a-zA-Z]+$/.test(str);
+  }
+  let firstInitial = a.toUpperCase().charAt(0);
+  let lastInitial = b.toUpperCase().charAt(0);
+  if (isAlpha(firstInitial) & isAlpha(lastInitial)) 
+    return (firstName[firstInitial] + ' ' + surname[lastInitial])
+  else return "Your name must start with a letter from A - Z."
 }
+
+// The preloaded variables are all in upper case. So had to use toUpperCase intead of the first impulse of toLowerCase
 
